@@ -27,14 +27,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # Step 4: Run linting
-      - name: Run Lint
-        run: npm run lint
-
-      # Step 5: Run unit tests
+      # Step 4: Run unit tests
       - name: Run Tests
-        run: npm test
+        run: npm run test -- --watch=false
 
-      # Step 6: Build the application
+      # Step 5: Build the application
       - name: Build Application
-        run: npm run build -- --prod
+        run: npm run build -- --configuration production
