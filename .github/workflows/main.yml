@@ -3,10 +3,10 @@ name: CI Pipeline for Angular
 on:
   push:
     branches:
-      - main # Trigger pipeline on pushes to the main branch
+      - master # Trigger pipeline on pushes to the main branch
   pull_request:
     branches:
-      - main # Trigger pipeline on pull requests to the main branch
+      - master # Trigger pipeline on pull requests to the main branch
 
 jobs:
   build:
